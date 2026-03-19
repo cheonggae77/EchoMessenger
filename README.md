@@ -1,10 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿# (C# 코딩) 에코 메신저
 
-namespace EchoMessenger
-{
-    class README
-    {
-    }
-}
+## 개요
+- C# 프로그래밍 학습
+- 1줄 소개: 사용자 키보드 입력을 받아서 처리하는 프로그램입니다.
+- 사용한 플랫폼:
+	- C#, .NET Windows Forms, Visual Studio, GitHub
+- 사용한 컨트롤:
+	- Label, TextBox, ListBox, Button
+- 사용한 기술과 구현한 기능:
+	- Visual Studio를 이용하여 UI 디자인
+	- string 클래스를 이용한 사용자 입력 데이터 처리
+
+## 실행 화면 (과제1)
+- 과제1 코드의 실행 스크린샷
+![과제1 실행화면](img/과제1_1.png)
+![과제1 실행화면](img/과제1_2.png)
+
+- 과제 내용
+	- Label(표시), TextBox(입력), Button(전송), ListBox(대화창)를 적절히 배치합니다.- 전송 버튼 클릭 시 TextBox의 텍스트를 ListBox의 항목(Items)으로 추가합니다.
+	- 추가 직후 TextBox의 내용을 비워(Clear) 다음 입력을 준비합니다.
+- 구현 내용과 기능 설명
+	- 입력창에 메시지 입력하고 전송 버튼을 누르면 메시지가 리스트 박스에 표시됩니다.
+	- 직후 텍스트박스에 내용이 사라집니다.
+	- 계속 반복하면 메시지가 리스트 박스에 한 줄씩 계속 추가됩니다.
+	- 추가 내용이 많아지면 리스트 박스에 스크롤바가 자동으로 생기고 스크롤된다.

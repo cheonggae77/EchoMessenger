@@ -28,24 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            lblEchoMessenger = new Label();
+            txtInput = new TextBox();
+            libTextSpace = new ListBox();
+            btnSendButton = new Button();
             SuspendLayout();
             // 
-            // label1
+            // lblEchoMessenger
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(262, 111);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 0;
-            label1.Text = "label1";
+            lblEchoMessenger.AutoSize = true;
+            lblEchoMessenger.Font = new Font("휴먼매직체", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            lblEchoMessenger.ForeColor = Color.Blue;
+            lblEchoMessenger.Location = new Point(44, 32);
+            lblEchoMessenger.Name = "lblEchoMessenger";
+            lblEchoMessenger.Size = new Size(278, 34);
+            lblEchoMessenger.TabIndex = 0;
+            lblEchoMessenger.Text = "Echo Messenger";
+            // 
+            // txtInput
+            // 
+            txtInput.Font = new Font("맑은 고딕", 15F);
+            txtInput.Location = new Point(44, 367);
+            txtInput.Name = "txtInput";
+            txtInput.Size = new Size(484, 41);
+            txtInput.TabIndex = 1;
+            // 
+            // libTextSpace
+            // 
+            libTextSpace.FormattingEnabled = true;
+            libTextSpace.Location = new Point(44, 86);
+            libTextSpace.Name = "libTextSpace";
+            libTextSpace.Size = new Size(712, 244);
+            libTextSpace.TabIndex = 2;
+            // 
+            // btnSendButton
+            // 
+            btnSendButton.BackColor = Color.FromArgb(255, 128, 0);
+            btnSendButton.Font = new Font("맑은 고딕", 20F);
+            btnSendButton.Location = new Point(593, 359);
+            btnSendButton.Name = "btnSendButton";
+            btnSendButton.Size = new Size(144, 60);
+            btnSendButton.TabIndex = 3;
+            btnSendButton.Text = "전송";
+            btnSendButton.UseVisualStyleBackColor = false;
+            btnSendButton.Click += btnSentButton_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(192, 255, 192);
             ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            Controls.Add(btnSendButton);
+            Controls.Add(libTextSpace);
+            Controls.Add(txtInput);
+            Controls.Add(lblEchoMessenger);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -54,6 +91,9 @@
 
         #endregion
 
-        private Label label1;
+        private Label lblEchoMessenger;
+        private TextBox txtInput;
+        private ListBox libTextSpace;
+        private Button btnSendButton;
     }
 }
