@@ -61,6 +61,18 @@
             libTextSpace.Size = new Size(712, 244);
             libTextSpace.TabIndex = 2;
             // 
+            // lblStatus
+            // 
+            lblStatus = new Label();
+            lblStatus.AutoSize = true;
+            lblStatus.Font = new Font("맑은 고딕", 9F);
+            lblStatus.ForeColor = Color.Black;
+            lblStatus.Location = new Point(44, 336);
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new Size(100, 15);
+            lblStatus.TabIndex = 4;
+            lblStatus.Text = "현재 대화: 0개";
+            // 
             // btnSendButton
             // 
             btnSendButton.BackColor = Color.FromArgb(255, 128, 0);
@@ -80,6 +92,7 @@
             BackColor = Color.FromArgb(192, 255, 192);
             ClientSize = new Size(800, 450);
             Controls.Add(btnSendButton);
+            Controls.Add(lblStatus);
             Controls.Add(libTextSpace);
             Controls.Add(txtInput);
             Controls.Add(lblEchoMessenger);
@@ -95,5 +108,6 @@
         private TextBox txtInput;
         private ListBox libTextSpace;
         private Button btnSendButton;
+        private Label lblStatus;
     }
 }
